@@ -11,3 +11,4 @@
 
 - snapshots tests
 - Cypress tests
+- webpack / deployment config
