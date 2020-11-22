@@ -17,4 +17,7 @@ describe('Grid', () => {
     it('exists', () => {
         expect(component.exists()).toBeTruthy()
     });
+    it('renders the correct number of boxes', () => {
+        expect(component.find('.numberbox').length).toEqual(144)
+    })
 })
