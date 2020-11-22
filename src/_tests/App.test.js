@@ -17,7 +17,7 @@ describe('App', () => {
         expect(component.exists()).toBeTruthy()
     });
     it('sets the selected box', () => {
-        component.find(Grid).props().setSelected(12);
+        component.find(Grid).props().selectNumber(12);
         expect(component.find(Grid).props().selected).toEqual(12)
     })
 })

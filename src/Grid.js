@@ -3,7 +3,7 @@ import './style/grid.css'
 
 const Grid = props => {
 
-    const { ceiling, selected, setSelected, highlight } = props;
+    const { ceiling, selected, selectNumber, highlight } = props;
 
     const numberBoxes = [];
 
@@ -12,7 +12,7 @@ const Grid = props => {
             <div
                 className={'numberbox'}
                 key={`numberbox-${i}`}
-                onClick={() => setSelected(i)}
+                onClick={() => selectNumber(i)}
             >
                 {i}
             </div>)

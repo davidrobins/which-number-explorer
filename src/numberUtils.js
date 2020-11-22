@@ -1,0 +1,1 @@
+export const calculateMultiples = (number, ceiling) => {}
