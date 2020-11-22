@@ -6,7 +6,6 @@ import Grid from "./Grid";
 const App = () => {
 
     const ceiling = 144
-
     const [selected, setSelected] = useState(null);
     const [multiples, setMultiples] = useState([])
 
@@ -17,7 +16,11 @@ const App = () => {
 
     return (
         <div className="App">
-            <Grid ceiling={ceiling} selected={selected} selectNumber={selectNumber} highlighted={multiples}/>
+            <Grid
+                ceiling={ceiling}
+                selected={selected}
+                selectNumber={selectNumber}
+                highlighted={multiples}/>
         </div>
     );
 }

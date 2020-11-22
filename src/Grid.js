@@ -4,7 +4,6 @@ import './style/grid.css'
 const Grid = props => {
 
     const { ceiling, selected, selectNumber, highlighted } = props;
-
     const numberBoxes = [];
 
     for(let i = 1; i <= ceiling; i++){
