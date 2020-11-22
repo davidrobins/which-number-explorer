@@ -12,12 +12,12 @@ const App = () => {
 
     const selectNumber = number => {
         setSelected(number);
-        setMultiples(calculateMultiples(number))
+        setMultiples(calculateMultiples(number, ceiling))
     }
 
     return (
         <div className="App">
-            <Grid ceiling={ceiling} selected={selected} selectNumber={selectNumber} highlight={multiples}/>
+            <Grid ceiling={ceiling} selected={selected} selectNumber={selectNumber} highlighted={multiples}/>
         </div>
     );
 }
