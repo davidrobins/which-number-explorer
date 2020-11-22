@@ -1,13 +1,18 @@
-import logo from './style/logo.svg';
-import './style/App.css';
+import React, { useState } from 'react';
+
 import Grid from "./Grid";
 
-function App() {
-  return (
-    <div className="App">
-      <Grid ceiling={20}/>
-    </div>
-  );
+const App = () => {
+
+    const ceiling = 144
+
+    const [selected, setSelected] = useState(null)
+
+    return (
+        <div className="App">
+            <Grid ceiling={ceiling} selected={selected} setSelected={setSelected}/>
+        </div>
+    );
 }
 
 export default App;
