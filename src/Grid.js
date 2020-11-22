@@ -1,4 +1,5 @@
 import React from 'react';
+import './style/grid.css'
 
 const Grid = props => {
 
