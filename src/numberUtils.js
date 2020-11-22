@@ -1,4 +1,4 @@
-export const calculateMultiples = (number, ceiling) => {
+const calculateMultiples = (number, ceiling) => {
     const maxMultiplier = Math.floor(ceiling/number);
     const multiples = [];
 
@@ -10,3 +10,5 @@ export const calculateMultiples = (number, ceiling) => {
 
     return multiples;
 }
+
+export default { calculateMultiples }

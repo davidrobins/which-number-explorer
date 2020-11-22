@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { calculateMultiples } from './numberUtils'
+import NumberUtils from './numberUtils'
 
 import Grid from "./Grid";
 
@@ -12,7 +12,7 @@ const App = () => {
 
     const selectNumber = number => {
         setSelected(number);
-        setMultiples(calculateMultiples(number, ceiling))
+        setMultiples(NumberUtils.calculateMultiples(number, ceiling))
     }
 
     return (

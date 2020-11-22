@@ -1,4 +1,5 @@
-import { calculateMultiples} from "../numberUtils";
+import NumberUtils from '../numberUtils'
+const { calculateMultiples} = NumberUtils
 
 describe('calculateMultiples', () => {
     it('returns a correct array of multiples up to the ceiling', () => {
